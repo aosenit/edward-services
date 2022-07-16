@@ -34,7 +34,7 @@ header{
     nav{
         position: absolute;
         left: 0;
-        top:calc(var(--headerHeight) + 2rem);
+        top:var(--headerHeight);
         clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%)
 
        
