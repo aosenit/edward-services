@@ -1,0 +1,64 @@
+.services{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    height: fit-content;
+    width: 100%;
+    color: var(--white);
+    padding-bottom: 2rem;
+
+
+    .service{
+        margin-bottom: 2rem;
+
+        .serviceIcon{
+            display: flex;
+            align-items: center;
+            position: relative;
+          
+
+            h2{
+                font-size: 4.5rem;
+                margin-right: 1rem;
+            }
+
+            h3{
+                
+                font-weight: 400;
+                font-size: 1.3rem;
+                margin: 1.5rem 0;
+                color: var(--secondaryColor);
+            }
+        }
+
+        p{
+            line-height: 1.5;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .services{
+        
+       .serviceGrid{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+       }
+
+    
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+        
+    .services .serviceGrid{
+        grid-template-columns: 1fr 1fr 1fr ;
+       }
+       
+}
+    

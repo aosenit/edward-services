@@ -8,8 +8,8 @@
   --headerHeight: 80px;
 
   --white: #fff;
-  --black: #000;
-  --gray: #f7f6f6;
+  --black: #151515;
+  --gray: rgba(255, 255, 255, 0.1);
   --secondaryColor: #ffa500;
   --primaryColor: #1095e2;
 }
@@ -33,6 +33,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--headerHeight);
 }
 
 body {
@@ -74,5 +75,5 @@ button {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 2rem;
-  background-color: var(--white);
+  background-color: inherit;
 }

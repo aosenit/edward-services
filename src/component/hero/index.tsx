@@ -75,11 +75,12 @@ const Hero = () => {
     return () => {
       clearInterval(autoChangeBackground);
     };
-  }, [currentIndex]);
+  }, [currentIndex, handleBackgroundMovement]);
 
   return (
     <div
       className={`hero animate__animated`}
+      id="hero"
       style={{
         backgroundImage: `url(${heroData[currentIndex]?.backgroundImage})`,
       }}

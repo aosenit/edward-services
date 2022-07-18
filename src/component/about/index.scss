@@ -1,0 +1,71 @@
+.about{
+
+    p{
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      
+
+        span{
+            font-weight: 600;
+            color: var(--secondaryColor);
+            display: block;
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.team{
+    overflow: hidden;
+    display: grid;
+    gap: .2rem;
+    margin: 1rem 0;
+
+    h3{
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--primaryColor);
+        border-left: 5px solid var(--secondaryColor);
+        height: max-content;
+        padding-left: 1rem;
+    }
+
+    h6{
+        margin: .8rem 0 .5rem;
+        font-size: .9rem;
+        color: gray;
+        font-weight: 400;
+    }
+
+    p{
+       font-size: 1rem;
+        font-weight: 400;
+    }
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border: 2px solid rgba(0,0,0,0.1);
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .teamGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .teamGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+    
+
+    
