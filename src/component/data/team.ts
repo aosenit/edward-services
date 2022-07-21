@@ -47,7 +47,7 @@ export const team = [
   {
     name: "James Miller",
     designation: "Business Development Director",
-    img: "https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=612x612&w=0&h=Ov2YWXw93vRJNKFtkoFjnVzjy_22VcLLXZIcAO25As4=",
+    img: "/assets/images/businessExecutive.png",
     experience:
       "About 22 years experience in the Oil &Gas industry, marine service",
   },
