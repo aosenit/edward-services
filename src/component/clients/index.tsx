@@ -36,7 +36,8 @@ const Clients = () => {
           {clients.map((c, i) => {
             return (
               <div className="clientItem" key={i}>
-                <img src={c.src} alt={c.alt} />
+                {/* <img src={c?.src} alt={c?.alt} /> */}
+                <h6>{c.alt}</h6>
               </div>
             );
           })}
