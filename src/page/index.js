@@ -1,5 +1,5 @@
-import React from "react";
 import About from "../component/about";
+import Clients from "../component/clients";
 import Header from "../component/header";
 import Hero from "../component/hero";
 import Services from "../component/services";
@@ -11,6 +11,9 @@ const LandingPage = () => {
       <Hero />
       <About />
       <Services />
+      <Clients />
+
+      {/* <Footer /> */}
     </>
   );
 };

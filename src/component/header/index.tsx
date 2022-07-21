@@ -60,13 +60,13 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#projects"
-                className={activeLink === "projects" ? "active" : ""}
+                href="#clients"
+                className={activeLink === "clients" ? "active" : ""}
                 onClick={() => {
-                  handleActiveLink("projects");
+                  handleActiveLink("clients");
                 }}
               >
-                PROJECTS
+                CLIENTS
               </a>
             </li>
             <li>

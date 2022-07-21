@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import "./index.scss";
 
@@ -28,13 +28,13 @@ const heroData = [
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex(currentIndex + 1);
-  };
+  }, [currentIndex]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setCurrentIndex(currentIndex - 1);
-  };
+  }, [currentIndex]);
 
   const handleEnd = () => {
     setCurrentIndex(heroData.length - 1);
@@ -44,23 +44,26 @@ const Hero = () => {
     setCurrentIndex(0);
   };
 
-  const handleBackgroundMovement = (direction: string) => {
-    if (direction === "prev") {
-      handlePrev();
+  const handleBackgroundMovement = useCallback(
+    (direction: string) => {
+      if (direction === "prev") {
+        handlePrev();
 
-      if (currentIndex === 0) {
-        handleEnd();
+        if (currentIndex === 0) {
+          handleEnd();
+        }
       }
-    }
 
-    if (direction === "next") {
-      handleNext();
+      if (direction === "next") {
+        handleNext();
 
-      if (currentIndex === heroData.length - 1) {
-        handleStart();
+        if (currentIndex === heroData.length - 1) {
+          handleStart();
+        }
       }
-    }
-  };
+    },
+    [currentIndex, handleNext, handlePrev]
+  );
 
   useEffect(() => {
     setCurrentIndex(0);

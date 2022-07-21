@@ -1,0 +1,21 @@
+.react-multi-carousel-list{
+    margin: 0 0 2rem;
+    height: 180px;
+   
+}
+.react-multi-carousel-track{
+    text-align: center; 
+    display: grid;
+    place-items: center;
+    height: 50%;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.clientItem{
+    padding: 0 3rem;
+}
