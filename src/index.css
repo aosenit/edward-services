@@ -21,14 +21,10 @@
   font-family: var(--fontMontserrat);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 html,
 body {
   user-select: none;
+  margin: 0;
 }
 
 html {
@@ -64,7 +60,7 @@ button {
   border-radius: 5px;
   font-size: 1rem;
 
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in;
 }
 
 .buttonContact:hover {

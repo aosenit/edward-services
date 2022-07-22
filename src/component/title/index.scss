@@ -1,13 +1,12 @@
 .title{
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
     background-color: inherit;
     color: inherit;
 
     h1{
         font-size: 3rem;
-        padding-bottom: .2rem;
-        border-bottom: .6rem solid var(--primaryColor);
+        border-bottom: .2rem solid var(--primaryColor);
         width: fit-content;
         border-radius: 10px;
     }
@@ -17,11 +16,10 @@
 
 @media screen and (min-width: 768px){
     .title{
-        margin: 2rem 0;
+        margin: 1rem 0;
        
         h1{
             font-size: 4rem;
-            padding-top: 2rem;
         }
     }
 }

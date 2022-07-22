@@ -31,16 +31,15 @@ const Clients = () => {
           showDots={true}
           autoPlay={true}
           arrows={false}
+          infinite={true}
           rewind={true}
+          rewindWithAnimation={true}
         >
-          {clients.map((c, i) => {
-            return (
-              <div className="clientItem" key={i}>
-                {/* <img src={c?.src} alt={c?.alt} /> */}
-                <h6>{c.alt}</h6>
-              </div>
-            );
-          })}
+          {clients.map((client, i) => (
+            <div key={i} className="clientItem">
+              <img src={client.src} alt={client.alt} />
+            </div>
+          ))}
         </Carousel>
       </div>
     </section>

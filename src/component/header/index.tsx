@@ -11,8 +11,8 @@ const Header = () => {
   };
   return (
     <header className="">
-      <div className="header container">
-        <section className="logo ">
+      <div className="header container animate__animated animate__zoomIn">
+        <section className="logo">
           <img src="/assets/images/edward-logo.png" alt="company logo" />
           <h1>Edwart</h1>
         </section>

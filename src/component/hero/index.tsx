@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-
+import { useInView } from "react-intersection-observer";
 import "./index.scss";
 
 const heroData = [
@@ -26,6 +26,7 @@ const heroData = [
 ];
 
 const Hero = () => {
+  const { ref, inView } = useInView();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = useCallback(() => {
@@ -82,13 +83,28 @@ const Hero = () => {
 
   return (
     <div
-      className={`hero animate__animated`}
+      className="hero "
       id="hero"
       style={{
         backgroundImage: `url(${heroData[currentIndex]?.backgroundImage})`,
       }}
+      ref={ref}
     >
-      <section id="heroText">
+      <a href="#about" className="animate__animated animate__pulse pulse">
+        <span
+          className={`material-symbols-outlined
+        
+        arrowDown  
+        }`}
+        >
+          keyboard_arrow_down
+        </span>
+      </a>
+
+      <section
+        id="heroText"
+        className={`animate__animated ${inView ? "animate__zoomIn" : ""}`}
+      >
         <h1>{heroData[currentIndex]?.title}</h1>
         <h5>{heroData[currentIndex]?.subtitle}</h5>
         <button className="buttonContact">
