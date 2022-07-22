@@ -1,4 +1,3 @@
-import React from "react";
 import { team } from "../data/team";
 import Title from "../title";
 import { useInView } from "react-intersection-observer";

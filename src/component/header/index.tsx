@@ -69,15 +69,9 @@ const Header = () => {
                 CLIENTS
               </a>
             </li>
-            <li>
-              <a
-                href="#contacts"
-                className={activeLink === "contacts" ? "active" : ""}
-                onClick={() => {
-                  handleActiveLink("contacts");
-                }}
-              >
-                CONTACTS
+            <li className="contact">
+              <a href="mailto:mailto:edwart.international123@gmail.com">
+                CONTACT US
               </a>
             </li>
           </ul>
