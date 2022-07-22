@@ -85,9 +85,6 @@ const Header = () => {
         >
           {" "}
           <span className="material-symbols-outlined">Menu</span>
-          {/* <button className="buttonContact">
-            <a href="mailto:edwart.international123@gmail.com">Contact</a>
-          </button> */}
         </section>
       </div>
     </header>

@@ -98,10 +98,7 @@ const Hero = () => {
         </span>
       </a>
 
-      <section
-        id="heroText"
-        className={`animate__animated ${"animate__zoomIn"}`}
-      >
+      <section id="heroText">
         <h1>{heroData[currentIndex]?.title}</h1>
         <h5>{heroData[currentIndex]?.subtitle}</h5>
         <button className="buttonContact">
