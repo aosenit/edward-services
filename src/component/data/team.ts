@@ -18,6 +18,7 @@ export const team = [
     img: "/assets/images/technicalDirector.png",
     experience:
       "About 20 Years experience in pipeline construction fabrication piping and other Oil and Gas & Oil structures. Quality management",
+    email: "samuelinyang@edwartepic.com",
   },
   // {
   //   name: "Esther Iwatt",

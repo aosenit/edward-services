@@ -70,9 +70,7 @@ const Header = () => {
               </a>
             </li>
             <li className="contact">
-              <a href="mailto:mailto:edwart.international123@gmail.com">
-                CONTACT US
-              </a>
+              <a href="mailto:edwart.international123@gmail.com">CONTACT US</a>
             </li>
           </ul>
         </nav>
@@ -86,6 +84,10 @@ const Header = () => {
           {" "}
           <span className="material-symbols-outlined">Menu</span>
         </section>
+
+        <div className="desktopContact">
+          <a href="mailto:edwart.international123@gmail.com">CONTACT</a>
+        </div>
       </div>
     </header>
   );

@@ -33,10 +33,18 @@
     }
 
     h6{
+        display: flex;
+        align-items: center;
         margin: .8rem 0 .5rem;
         font-size: .9rem;
         color: gray;
         font-weight: 400;
+
+        .email{
+            margin-left: 1rem;
+            color: var(--secondaryColor);
+            cursor: pointer;
+        }
         
     }
 

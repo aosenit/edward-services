@@ -101,10 +101,13 @@ const Hero = () => {
       <section id="heroText">
         <h1>{heroData[currentIndex]?.title}</h1>
         <h5>{heroData[currentIndex]?.subtitle}</h5>
-        <button className="buttonContact">
-          {" "}
-          <a href="mailto:edwart.international123@gmail.com">CONTACT US</a>
-        </button>
+
+        <a
+          href="mailto:edwart.international123@gmail.com"
+          className="buttonContact"
+        >
+          CONTACT US
+        </a>
       </section>
 
       <div className="heroCover"></div>

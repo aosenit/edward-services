@@ -44,6 +44,7 @@ const About = () => {
               img={member.img}
               designation={member.designation}
               experience={member.experience}
+              email={member.email}
               key={index}
             />
           ))}
@@ -60,14 +61,25 @@ interface ITeam {
   img: string;
   designation: string;
   experience: string;
+  email?: string;
 }
 
-const Team = ({ name, img, designation, experience }: ITeam) => {
+const Team = ({ name, img, designation, experience, email }: ITeam) => {
   return (
     <section className="team">
       <img src={img} alt={name} />
+
       <h3>{name}</h3>
-      <h6>{designation}</h6>
+      <h6>
+        {designation}{" "}
+        <span className="email">
+          {email && (
+            <a href={`mailto:${email}`}>
+              <span className="material-symbols-outlined">mail</span>
+            </a>
+          )}
+        </span>{" "}
+      </h6>
       <p>{experience}</p>
     </section>
   );

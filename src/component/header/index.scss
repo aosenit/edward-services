@@ -64,6 +64,8 @@ header{
                 border-bottom: 1px solid var(--gray);
                 padding: 1.2rem 0;
             }
+
+         
         }
 
         // .menu{
@@ -113,20 +115,29 @@ header{
 
 
 .contact{
-    background-color: var(--primaryColor);
-    cursor: pointer;
-    width: 100%;
+  
+    padding: 0 !important;
+    width: fit-content;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     text-align: center;
-   transition: 0.5s;
+    transition: 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .contact a{
     width: 100%;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    padding: 1rem 2.5rem;
 }
 
 .contact:hover{
     opacity: .7;
+}
+
+.desktopContact{
+    display: none;
 }
 
 @media screen and (min-width: 768px){
@@ -146,11 +157,13 @@ header{
 @media screen and (min-width: 1024px){
    header{
     overflow-y: hidden;
-   }
 
     .dclose, .menu{
-        display: none !important;
+        display: none ;
     }
+   }
+
+    
 
     .headerNav{
         position: relative !important;
@@ -165,6 +178,7 @@ header{
             align-items: center;
             padding: 0 !important;
             margin: 0 !important;
+            position: relative;
            
 
             li{
@@ -176,13 +190,15 @@ header{
     }
 
     .contact{
-        position: relative ;
-        display: grid;
-        place-items: center;
-        height: 40px;
-        width:fit-content ;
-        margin-left: 3rem;
-      color: var(--white);
+      display: none;
+    }
+
+    .desktopContact{
+        display: block;
+        margin-left: 4rem;
+        background: var(--primaryColor);
+        padding: .5rem 2rem;
+        color: var(--white);
     }
 }
     
